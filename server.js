@@ -14,8 +14,13 @@ dotenv.config()
 
 const PORT=process.env.PORT || 1001
 
+// server.use(cors({
+//     origin:'http://localhost:5173',credentials: true,
+// }))
+
+
 server.use(cors({
-    origin:'http://localhost:5173',credentials: true,
+    origin:'*'
 }))
 
 
